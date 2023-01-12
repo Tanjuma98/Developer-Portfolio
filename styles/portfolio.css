@@ -192,3 +192,46 @@ input{
 .contact img{
     margin-right: 10px;
 }
+/* Responsive styles */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav, .banner, .skills-container, .resume-content, .about-me-info-container, .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .about-me, .contact{
+        padding: 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+    .btn-outline,.btn-primary{
+        padding: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .contact, .about-me{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+}
